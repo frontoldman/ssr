@@ -3,5 +3,5 @@ import ReactDom from 'react-dom'
 import Root from './component/Root'
 
 ReactDom.hydrate((
-  <Root />
+  <Root initData={window.__init_data.rootData}/>
 ), document.getElementById('root'))
